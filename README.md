@@ -1,5 +1,4 @@
-# prg04projetoweb
-Mapa do Corre 
+# Mapa do Corre 
   O Mapa do Corre é uma plataforma web que conecta pequenos empreendedores a consumidores locais, facilitando a divulgação e incentivando o consumo dentro da comunidade.
 Objetivo
   Dar visibilidade a pequenos negócios;
