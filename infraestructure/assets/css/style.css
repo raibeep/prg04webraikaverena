@@ -1,0 +1,38 @@
+/*Define as variáveis globais que podem ser usadas em qualquer lugar do CSS*/
+:root {
+   --amarelo: #FFBE0B;
+   --laranja: #FB5607;
+   --azul: #3A86FF;
+   --fundo: #FFFBF0;
+   --texto: #1a1a1a;
+}
+
+body {
+    backgroud-color: var(--fundo);
+    color: var(--texto);/*Define a cor padrão do texto da página*/
+    font-family: Arial, sans-sefif;/*Define a fonte padrão da página*/
+    padding: 40px 20px;/* Espaçamento interno: 40px em cima/baixo e 20px nas laterais */
+    max-width: 800px; /* Limita a largura máxima do conteúdo a 800px */
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;/*Define o tamanho da fonte 3rem = 3x o tamanho padrão*/
+    color: var(--laranja);
+    border-bottom: 4px solid var(--amarelo);/*Adiciona uma linha amarela embaixo do título*/
+    padding-bottom: 10px;/*Espaço entre o texto e a linha*/
+    margin-bottom: 20px;/*Espaço entre o h1 e o próximo elemento*/
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--azul);
+    margin-top: 32px;/*Espaço entre os conteúdos*/
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--texto);
+}
