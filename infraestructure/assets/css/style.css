@@ -8,7 +8,7 @@
 }
 
 body {
-    backgroud-color: var(--fundo);
+    background-color: var(--fundo);
     color: var(--texto);/*Define a cor padrão do texto da página*/
     font-family: Arial, sans-sefif;/*Define a fonte padrão da página*/
     padding: 40px 20px;/* Espaçamento interno: 40px em cima/baixo e 20px nas laterais */
