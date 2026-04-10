@@ -9,33 +9,63 @@
 
 nav{
     display: flex; /*coloca os filhos lado a lado*/
-    gap: 40px;/*espaço entre os links*/
-    margin-top: 12px;
+    align-items: center;/*espaço entre os links*/
+    gap: 2%; /* espaçamento proporcional entre os filhos */
 }
 
-nav a{
+#menu ul{
+    list-style: none;/* remove as bolinhas padrão da lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;/* espaço fixo entre cada item do menu */
+    align-items: center;/* alinha os itens verticalmente ao centro */
+    flex-wrap: nowrap; /*impede quebra de linha*/
+}
+
+#menu ul li a{
     color: var(--azul);
-    text-decoration: none; /*remove o sublinhado padrão*/
+    text-decoration: none;/* remove o sublinhado padrão dos links */
+    padding: 0.5em 1em;
+    border-radius: 6px;/* arredonda os cantos do fundo ao passar o mouse */
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;/*impede quebra de linha*/
+    transition: backgroud 0.2s, color 0.2s;/* animação suave ao passar o mouse */
+}
+
+/* Estiliza os links do menu quando o mouse passa por cima (hover) */
+#menu ul li a:hover{
+    background-color: var(--amarelo);/* fundo amarelo ao passar o mouse */
+    color: var(--texto);
+}
+
+nav a {
+    color: var(--azul);
+    text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--laranja);
 }
 
 body {
     background-color: var(--fundo);
     color: var(--texto);/*Define a cor padrão do texto da página*/
-    font-family: Arial, sans-sefif;/*Define a fonte padrão da página*/
-    padding: 40px 20px;/* Espaçamento interno: 40px em cima/baixo e 20px nas laterais */
+    font-family: Arial, sans-serif;/*Define a fonte padrão da página*/
+    padding: 2% 4%;/* Espaçamento interno: 40px em cima/baixo e 20px nas laterais */
     max-width: 1600px; /* Limita a largura máxima do conteúdo a 800px */
     margin: 0 auto;
 }
 
 header{
-    border-bottom: 4px solid var(--amarelo);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    border-bottom: 4px solid var(--amarelo);/* linha amarela embaixo do header */
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* empurra o título para a esquerda e o menu para a direita */
 }
 
 h1 {
@@ -46,8 +76,8 @@ h1 {
 }
 
 section{
-    margin-bottom: 32px;
-    padding: 16px;
+    margin-bottom: 5%;
+    padding: 2%;
     border-left: 4px solid var(--azul);
     box-sizing: border-box;
 }
@@ -56,7 +86,7 @@ h2 {
     font-size: 1.5rem;
     color: var(--azul);
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 
 p {
