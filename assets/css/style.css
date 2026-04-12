@@ -7,6 +7,36 @@
    --texto: #1a1a1a;
 }
 
+.btn-login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--amarelo);
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 600;
+    transition: 0.3s
+}
+
+.btn-login img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-login:hover {
+    background-color: var(--laranja);
+    color: #fff;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 nav{
     display: flex; /*coloca os filhos lado a lado*/
     align-items: center;/*espaço entre os links*/
