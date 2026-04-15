@@ -8,8 +8,8 @@
 
 .wrapper {
     width: 100%;
-    max-width: 700px;
-    margin: 80px auto 0 auto;
+    margin: 20px 0;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,9 +18,11 @@
 header {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
     margin-top: 30px;
     width: 100%;
-    max-width: 700px;
     padding: 12px;
     background-color: #ffffff;
     border: 1px solid #eee;
@@ -51,24 +53,24 @@ header {
 .top-bar {
     display: flex;
     align-items: center;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
 }
 
 .container {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     width: 100%;
-    max-width: 700px;
     background-color: #ffffff;
     border: 2px solid rgba(54, 54, 54, 0.039);
     border-radius: 5px;
     color: #333;
-    padding: 20px 16px; 
+    padding: 15px 10px; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow-x: auto;
 }
 
 body {
@@ -85,13 +87,33 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 th, td {
-    padding: 2px 16px;
-    text-align: left;
-    white-space: nowrap;
+    padding: 6px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: center;
+    white-space: nowrap;
+    font-size: 0.7rem;
+}
+
+/*limita o tamanho das colunas*/
+td:nth-child(1) {
+    width: 10%;
+}
+
+td:nth-child(2) {
+    width: 35%;
+}
+
+td:nth-child(3) {
+    width: 35%;
+}
+
+td:nth-child(4) {
+    width: 20%;
 }
 
 tr:nth-child(even) {
@@ -110,7 +132,7 @@ caption {
 
 .acoes {
     display: flex;
-    gap: 6px;
+    gap: 4px;
     justify-content: center;
 }
 
@@ -120,8 +142,8 @@ caption {
     border: none;
     border-radius: 6px;
     gap: 6px;
-    padding: 7px 15px;
-    font-size: 0.78rem;
+    padding: 4px;
+    font-size: 0;
     font-weight: 500;
     cursor: pointer;
     transition: transform 0.1s, opacity 0.1s;
@@ -132,9 +154,10 @@ caption {
 }
 
 .btn svg {
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
 }
+
 
 .editar {
     background: transparent;
@@ -160,15 +183,15 @@ caption {
 
 .pesquisa {
     border: none;
+    width: 100%;
     border-radius: 5px;
-    padding: 5px;
-    flex: 1;
     border: 1px solid #ddd;
     background-color: #fff;
 }
 
 .btn-adicionar {
     border: none;
+    width: 100%;
     border-radius: 6px;
     padding: 6px;
     background-color: #FB5607;
