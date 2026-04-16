@@ -65,7 +65,7 @@ body {
     background: #FFFBF0;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
 }
 
 table {
@@ -293,5 +293,61 @@ caption {
  
     .container {
         padding: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header-titulo {
+        padding: 16px calc(50% - 450px) 12px calc(50% - 450px);
+    }
+ 
+    .wrapper {
+        max-width: 680px;
+        margin: 40px auto;
+        padding: 0;
+        gap: 20px;
+    }
+ 
+    .btn-adicionar {
+        width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+ 
+    /* tabela */
+    table {
+        table-layout: auto;
+    }
+ 
+    th, td {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+    }
+ 
+    th:nth-child(1),
+    th:nth-child(2),
+    th:nth-child(3),
+    th:nth-child(4) {
+        width: auto;
+    }
+ 
+    /* botões editar/excluir com texto */
+    .btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        gap: 6px;
+    }
+ 
+    .btn svg {
+        width: 13px;
+        height: 13px;
+    }
+ 
+    .acoes {
+        gap: 8px;
+    }
+ 
+    .container {
+        padding: 10px;
     }
 }
