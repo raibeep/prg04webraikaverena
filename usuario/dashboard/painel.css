@@ -227,6 +227,10 @@ caption {
     flex-direction: column;
 }
 
+.badge.bg-sucess {
+    background-color: #28a746 !important;
+}
+
 @media (min-width: 1025px) {
  
     .header-titulo {
